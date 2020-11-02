@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #custom-button {
+        /* for custom file */
+        /* #custom-button {
             padding: 10px;
             color: white;
             background-color: #009578;
@@ -23,14 +24,37 @@
             margin-left: 10px;
             font-family: sans-serif;
             color: #aaa;
+        } */
+
+        /* for design pattern */
+
+        .square {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: inline-block;
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            font-size: 150%;
+            font-family: sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <input type="file" id="real-file" hidden='' />
+
+    <div class="square" id="element_observer1"></div>
+
+    <hr>
+
+    <button type="button" onclick="model.increment()">Increment</button>
+
+    <!-- <input type="file" id="real-file" hidden='' /> for custom file
     <button type="button" id="custom-button">Choose a file</button>
-    <span id="custom-text">no file Chosen yet</span>
+    <span id="custom-text">no file Chosen yet</span> -->
+
 
     <script src="js/array_destructuring.js"></script>
     <script src="js/object_destructuring.js"></script>
@@ -40,7 +64,7 @@
     <script src="js/array_reduce.js"></script>
     <script src="js/array_map.js"></script>
     <script src="js/design_pattern.js"></script>
-    <script src="js/upload_button.js"></script>
+    <!-- <script src="js/upload_button.js"></script> -->
     <!-- <script src="js/extend_prototype.js"></script> -->
 </body>
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <style media="screen">
         /* for custom file */
         /* #custom-button {
             padding: 10px;
@@ -41,20 +41,39 @@
             font-family: sans-serif;
         } */
 
-        .box {
+        /* .box {
             box-sizing: border-box;
             width: 100px;
             height: 100px;
             background: #009879;
             border: 2px solid black;
             padding: 5px;
+        } */
+        fieldset {
+            margin-bottom: 20px;
+        }
+
+        input,
+        button {
+            padding: 7px;
+            height: 40px;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="box"></div>
+    <fieldset>
+        <legend>Insert Data</legend>
+        <input id="inp_key" type="text" placeholder="Enter Key...">
+        <input id="inp_value" type="text" placeholder="Enter value...">
+        <button id="btn_insert" type="button">Insert Data</button>
+    </fieldset>
+    <fieldset>
+        <legend>Local Storage</legend>
+        <div class="ls_output"></div>
+    </fieldset>
+    <!-- <div class="box"></div> for getBundingClientRect() -->
     <!-- <ul id="my_list"> for next element sibling
         <li>Oranges</li>
         <li id='bananas'>Bananas</li>
@@ -88,7 +107,7 @@
     <script src="js/sopy_text.js"></script>
     <script src="js/object_store.js"></script>
     <script src="js/local_storage.js"></script>
-    <script src="js/get_bounding_client_rect.js"></script>
+    <!-- <script src="js/get_bounding_client_rect.js"></script> -->
     <!-- <script src="js/next_element_sibling.js"></script> -->
     <!-- <script src="js/node_clone_node.js"></script> -->
     <!-- <script src="js/node_inset_before.js"></script> -->

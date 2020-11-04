@@ -40,17 +40,27 @@
             font-size: 150%;
             font-family: sans-serif;
         } */
+
+        .box {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            background: #009879;
+            border: 2px solid black;
+            padding: 5px;
+        }
     </style>
 </head>
 
 <body>
 
-    <ul id="my_list">
+    <div class="box"></div>
+    <!-- <ul id="my_list"> for next element sibling
         <li>Oranges</li>
         <li id='bananas'>Bananas</li>
         <li>Apples</li>
         <li>Pears</li>
-    </ul>
+    </ul> -->
 
     <!-- <h2 id="title">XMLHttpRequest - dcode</h2>
     <p class="title"></p> -->
@@ -79,7 +89,7 @@
     <script src="js/object_store.js"></script>
     <script src="js/local_storage.js"></script>
     <script src="js/get_bounding_client_rect.js"></script>
-    <script src="js/next_element_sibling.js"></script>
+    <!-- <script src="js/next_element_sibling.js"></script> -->
     <!-- <script src="js/node_clone_node.js"></script> -->
     <!-- <script src="js/node_inset_before.js"></script> -->
     <!-- <script src="js/form_data.js"></script> -->

@@ -4,4 +4,9 @@ const kivi_item = document.createElement('li');
 
 kivi_item.innerText = 'kivi';
 
-my_list.insertBefore(kivi_item, bananas_item);
+add_to_begining(my_list, kivi_item);
+
+function add_to_begining(parent, to_insert) {
+    const position = parent.firstChild;
+    parent.insertBefore(to_insert, position);
+}

@@ -1,9 +1,9 @@
 const oo_update = document.getElementById('oo_update');
 
-if (navigator.onLine) {
-    oo_update.textContent = 'we are online';
-    oo_update.style.color = 'green';
-}
+// if (navigator.onLine) {
+// oo_update.textContent = 'we are online';
+// oo_update.style.color = 'green';
+// }
 
 window.addEventListener('online', function () {
     oo_update.textContent = 'we are online';

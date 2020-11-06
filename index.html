@@ -64,20 +64,49 @@
             color: white;
             background-color: red;
         } */
+
+        .progress-bar {
+            position: relative;
+            width: 300px;
+            height: 40px;
+            border: 1px solid #000000;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: #59ea63;
+            transition: width 0.5s;
+        }
+
+        .progress-bar-value {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
 
-    <h2 id="title" style="user-select: all;">What is bind</h2>
+    <!-- <h2 id="title" style="user-select: all;">What is bind</h2> -->
+
+    <div class="progress-bar">
+        <div class="progress-bar-value">65%</div>
+        <div class="progress-bar-fill"></div>
+    </div>
+
     <!-- <div class="box">Box-1</div> for box
     <div class="box">Box-2</div>
     <div class="box">Box-3</div> -->
-    <ul id="list1">
+    <!-- <ul id="list1"> for contains and node item
         <li>Item1</li>
         <li>Item2</li>
         <li>Item3</li>
-    </ul>
+    </ul> -->
     <!-- <ul id="list2">
         <li>Item1</li>
         <li>Item2</li>
@@ -135,7 +164,7 @@
     <script src="js/onblur.js"></script>
     <script src="js/prevent_default.js"></script>
     <script src="js/progress_bar.js"></script>
-    <script src="js/contains.js"></script>
+    <!-- <script src="js/contains.js"></script> -->
     <!-- <script src="js/repeat.js"></script> -->
     <!-- <script src="js/query_selector_all.js"></script> -->
     <!-- <script src="js/query_selector.js"></script> -->

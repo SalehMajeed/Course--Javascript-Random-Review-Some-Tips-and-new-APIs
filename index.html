@@ -87,6 +87,19 @@
             justify-content: center;
             font-weight: bold;
         } */
+
+        #my-textarea {
+            height: 150px;
+            width: 100%;
+        }
+
+        #my-textarea-remaining-char {
+            color: #333333;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -95,11 +108,15 @@
     <h1 id='h1'></h1>
     <h2 id="title" style="user-select: all;">What is bind</h2>
 
-    <table id="rankings-table">
+    <p>
+        Please fill out the form Below
+    </p>
+    <textarea id="my-textarea"></textarea>
+    <div id="my-textarea-remaining-char">250 characters remaining.</div>
+    <!-- <table id="rankings-table"> for json data
         <thead>
             <tr>
-                <th>Ranking</th>
-                <th>Full Name</th>
+                 <th>Full Name</th>
                 <th>Ponits</th>
             </tr>
         </thead>
@@ -120,7 +137,7 @@
                 <td>932</td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
     <!-- <button id="show-message">Show Message</button> for timeout and interval
     <button id="cancel-message">Cancel Message</button> -->
     <!-- <iframe src="content.html" frameborder="1" style="width: 600px; height: 300px;"></iframe> -->
@@ -191,10 +208,11 @@
     <button type="button" id="custom-button">Choose a file</button>
     <span id="custom-text">no file Chosen yet</span> -->
 
+    <!-- <script src="password.js"></script> -->
     <script src="js/object_assign.js"></script>
     <script src="js/ajax_submit.js"></script>
     <script src="js/charater_counter.js"></script>
-    <script src="js/data_into_tables.js"></script>
+    <!-- <script src="js/data_into_tables.js"></script> -->
     <!-- <script src="js/set_interval.js"></script> -->
     <!-- <script src="js/set_timeout.js"></script> -->
     <!-- <script src="js/utf-16.js"></script> -->

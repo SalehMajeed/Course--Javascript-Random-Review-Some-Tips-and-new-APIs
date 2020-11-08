@@ -88,7 +88,7 @@
             font-weight: bold;
         } */
 
-        /* #my-textarea {  
+        #my-textarea {
             height: 150px;
             width: 100%;
         }
@@ -99,7 +99,7 @@
             font-weight: bold;
             margin-top: 5px;
             text-align: right;
-        } */
+        }
 
         #form-messages {
             background-color: rgb(255, 232, 232);
@@ -119,7 +119,7 @@
 
     <h1 id='h1'></h1>
     <h2 id="title" style="user-select: all;">What is bind</h2>
-    <p>
+    <!-- <p> for event scroll
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet id laudantium ullam quidem
         perferendis consectetur nemo quis placeat rerum quas nisi iure est fugit hic voluptatum, iusto ex! Est.
     </p>
@@ -142,20 +142,20 @@
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet id laudantium ullam quidem
         perferendis consectetur nemo quis placeat rerum quas nisi iure est fugit hic voluptatum, iusto ex! Est.
-    </p>
-    <!-- <div class="form"> ajax form
-        <ul id="form-messages">
+    </p> -->
+    <form id='my-form' class="form"> ajax form
+        <!-- <ul id="form-messages">
             <li>Generic Error #1</li>
-        </ul>
+        </ul> -->
 
         <label for="username">Username</label>
-        <input type="text" id="username" spellcheck="false">
+        <input type="text" id="username" name="username" spellcheck="false">
 
         <label for="password">Password</label>
-        <input type="password" id="password">
+        <input type="password" id="password" name="password">
 
-        <button type="submit" id="btn-submit">Login</button>
-    </div> -->
+        <button type="submit">Login</button>
+    </form>
 
     <!-- <p> for character count
         Please fill out the form Below
@@ -266,7 +266,7 @@
     <script src="js/fetch_apt.js"></script>
     <script src="js/url_search_para.js"></script>
     <script src="js/event_form.js"></script>
-    <script src="js/ajax_get.js"></script>
+    <!-- <script src="js/ajax_get.js"></script> -->
     <!-- <script src="js/scroll_event.js"></script> -->
     <!-- <script src="js/object_assign.js"></script> -->
     <!-- <script src="js/ajax_submit.js"></script> -->

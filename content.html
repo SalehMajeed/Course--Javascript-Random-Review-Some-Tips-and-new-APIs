@@ -21,6 +21,11 @@
 
         para.textContent = para.textContent + parent_heading.textContent
     </script>
+    <script>
+        window.addEventListener('unload', function () {
+            parent.console.log('Child.htm is gone');
+        });
+    </script>
 </body>
 
 </html>

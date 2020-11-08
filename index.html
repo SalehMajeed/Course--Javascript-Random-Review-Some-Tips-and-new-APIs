@@ -88,7 +88,7 @@
             font-weight: bold;
         } */
 
-        #my-textarea {
+        /* #my-textarea {
             height: 150px;
             width: 100%;
         }
@@ -111,6 +111,14 @@
             margin-bottom: 10px;
             padding: 10px 25px;
             max-width: 250px;
+        } */
+
+        #box {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: blue;
+            transition: width 0.5s;
         }
     </style>
 </head>
@@ -119,6 +127,8 @@
 
     <h1 id='h1'></h1>
     <h2 id="title" style="user-select: all;">What is bind</h2>
+    <div id="box"></div>
+    <button id="btn_go">go</button>
     <!-- <p> for event scroll
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet id laudantium ullam quidem
         perferendis consectetur nemo quis placeat rerum quas nisi iure est fugit hic voluptatum, iusto ex! Est.
@@ -143,19 +153,19 @@
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet id laudantium ullam quidem
         perferendis consectetur nemo quis placeat rerum quas nisi iure est fugit hic voluptatum, iusto ex! Est.
     </p> -->
-    <form id='my-form' class="form"> ajax form
-        <!-- <ul id="form-messages">
+    <!-- <form id='my-form' class="form"> ajax form
+        <ul id="form-messages">
             <li>Generic Error #1</li>
-        </ul> -->
+        </ul>
 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" spellcheck="false">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" spellcheck="false">
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
 
-        <button type="submit">Login</button>
-    </form>
+    <button type="submit">Login</button>
+    </form> -->
 
     <!-- <p> for character count
         Please fill out the form Below
@@ -263,7 +273,7 @@
     <script src="js/load_event.js"></script>
     <script src="js/debug_console.js"></script>
     <script src="js/transitioned.js"></script>
-    <script src="js/fetch_apt.js"></script>
+    <!-- <script src="js/fetch_apt.js"></script> -->
     <!-- <script src="js/url_search_para.js"></script> -->
     <!-- <script src="js/event_form.js"></script> -->
     <!-- <script src="js/ajax_get.js"></script> -->

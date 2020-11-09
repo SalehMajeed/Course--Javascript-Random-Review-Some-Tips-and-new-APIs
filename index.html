@@ -17,16 +17,29 @@
             margin-top: 80px;
             font-size: 24px;
         } */
+
+        .caps-lock-warn {
+            font-weight: bold;
+            font-size: 14px;
+            color: red;
+            display: none;
+        }
     </style>
 </head>
- 
+
+<p>
+    view Count: <strong id="view-count">0</strong>
+</p>
+
 <form class="form" id="my-form">
     <label for="inp_username">Username</label>
     <input type="text" name="inp_username" id="inp_username">
     <label for="inp_password">Password</label>
     <input type="password" name="inp_password" id="inp_password">
+    <p class="caps-lock-warn">Caps lock is on </p>
     <button type="submit">Login</button>
 </form>
+
 <!-- <body id='container'> -->
 
     <!-- <div id="box">
@@ -34,8 +47,8 @@
 </div> -->
 
     <script src="js/detecting_caps_lock.js"></script>
-    <script src="js/real_time_update_fetch_api.js"></script>
-    <script src="js/sending_post_data.js"></script>
+    <!-- <script src="js/real_time_update_fetch_api.js"></script> -->
+    <!-- <script src="js/sending_post_data.js"></script> -->
     <!-- <script src="js/sending_json_with_fetch_api.js"></script> -->
     <!-- <script src="js/json_with_fetch_api.js"></script> -->
     <!-- <script src="js/render_html.js"></script> -->

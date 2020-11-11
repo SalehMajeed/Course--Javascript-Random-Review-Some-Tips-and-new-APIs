@@ -28,6 +28,27 @@
         tr[data-href] {
             cursor: pointer;
         }
+
+        .progress-bar {
+            height: 35px;
+            width: 250px;
+            border: 2px solid darkblue;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            width: 0%;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            transition: width 0.25s;
+        }
+
+        .progress-bar-text {
+            margin-left: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -46,8 +67,20 @@
 
 <body id='container'>
 
-    <button class="button" onclick="vibrate(1000)">Vibrate Single</button><br>
-    <button class="button" onclick="vibrate_pattern()">Vibrate Pattern</button>
+
+    <form class="form" id="upload-form">
+        <input type="file" name="inpFile" id="inpFile">
+        <input type="submit" class="button" value="upload">
+    </form>
+
+    <div class="progress-bar" id='progressbar'>
+        <div class="progress-bar-fill">
+            <span class="progress-bar-text">0%</span>
+        </div>
+    </div>
+
+    <!-- <button class="button" onclick="vibrate(1000)">Vibrate Single</button><br>
+    <button class="button" onclick="vibrate_pattern()">Vibrate Pattern</button> -->
 
     <!-- <button onclick="change_stuff()">Change Stuff</button> -->
 
@@ -85,7 +118,7 @@
     <script src="js/upload_multiple_files_xhr.js"></script>
     <script src="js/upload_file_fetch.js"></script>
     <script src="js/ajax_file_upload_prgress_bar.js"></script>
-    <script src="js/vibrate_mobile.js"></script>
+    <!-- <script src="js/vibrate_mobile.js"></script> -->
     <!-- <script src="js/iframe_access.js"></script> -->
     <!-- <script src="js/clickable_row.js"></script> -->
     <!-- <script src="js/by_reference_vs_by_value.js"></script> -->

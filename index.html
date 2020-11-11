@@ -69,6 +69,28 @@
             font-weight: bold;
             font-size: 1em;
         } */
+
+        #box {
+            position: absolute;
+            top: 150px;
+            left: 40px;
+            width: 75px;
+            height: 75px;
+            background: red;
+            animation: myAnimation 1.5s forwards 0.5s;
+        }
+
+        #keyframes myAnimation {
+            from {
+                left: 40px;
+                border-radius: 0;
+            }
+
+            to {
+                left: calc(180vw - 115px);
+                border-radius: 50%;
+            }
+        }
     </style>
 </head>
 
@@ -87,12 +109,14 @@
 
 <body id='container'>
 
-    <button class="button" type="button" onclick="to_big()">to big</button>
+    <div id="box"></div>
+
+    <!-- <button class="button" type="button" onclick="to_big()">to big</button>
     <button class="button" type="button" onclick="to_small()">to small</button>
 
     <div id="box">
         <span id="text">Here is some sample text.</span>
-    </div>
+    </div> -->
 
     <!-- <form class="form" id="upload-form" action="./upload/" method="post" enctype="multipart/form-data">
         <input type="file" name="inpFile" id="inpFile" multiple>
@@ -146,8 +170,8 @@
     <script src="js/chaining_fetch_request.js"></script>
     <script src="js/export_table_to_csv.js"></script>
     <script src="js/detect_css_animation.js"></script>
-    <script src="js/virtual_keyboard.js"></script>
-    <script src="js/favicon_change_dynamically.js"></script>
+    <!-- <script src="js/virtual_keyboard.js"></script> -->
+    <!-- <script src="js/favicon_change_dynamically.js"></script> -->
     <!-- <script src="js/gettig_css_style_with_js.js"></script> -->
     <!-- <script src="js/wrap_ajax_in_promise.js"></script> -->
     <!-- <script src="js/file_api_upload_form.js"></script> -->

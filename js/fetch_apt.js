@@ -1,15 +1,15 @@
 const params = new URLSearchParams({
-    query: 'dinner',
-    language: 'english',
+  query: "dinner",
+  language: "english",
 });
 
 const url = `login.php?${params.toString()}`;
 
 console.log(url);
 
-fetch('login.php', {
-    method: 'GET',
-    body: params,
+fetch("login.php", {
+  method: "GET",
+  body: params,
 })
-    .then((response) => response.text())
-    .then(console.log());
+  .then((response) => response.text())
+  .then(console.log());

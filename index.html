@@ -68,10 +68,10 @@
 <body id='container'>
 
 
-    <form class="form" id="upload-form">
+    <form class="form" id="upload-form" action="./upload/" method="post" enctype="multipart/form-data">
         <input type="file" name="inpFile" id="inpFile" multiple>
         <!-- <input type="submit" class="button" value="upload"> -->
-        <button id="btn-upload">Upload File</button>
+        <button type="submit" id="btn-upload">Upload File</button>
     </form>
 
     <div class="progress-bar" id='progressbar'>
@@ -115,7 +115,7 @@
 
 
     <script src="js/file_api_upload_form.js"></script>
-    <script src="js/upload_multiple_files_fetch.js"></script>
+    <!-- <script src="js/upload_multiple_files_fetch.js"></script> -->
     <!-- <script src="js/upload_multiple_files_xhr.js"></script> -->
     <!-- <script src="js/upload_file_fetch.js"></script> -->
     <!-- <script src="js/ajax_file_upload_prgress_bar.js"></script> -->

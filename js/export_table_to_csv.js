@@ -53,8 +53,6 @@ class TableCSVExporter {
   }
 }
 
-new TableCSVExporter(data_table);
-
 console.log(new TableCSVExporter(data_table, false).convert_to_csv());
 
 btn_export_to_csv.addEventListener("click", () => {

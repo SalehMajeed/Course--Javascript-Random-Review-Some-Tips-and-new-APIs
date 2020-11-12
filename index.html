@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon" id='favicon'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="cs/table.css">
     <style>
         /* #box {
             width: 200px;
@@ -70,7 +71,7 @@
             font-size: 1em;
         } */
 
-        #box {
+        /* #box {
             position: absolute;
             top: 150px;
             left: 40px;
@@ -90,7 +91,7 @@
                 left: calc(180vw - 115px);
                 border-radius: 50%;
             }
-        }
+        } */
     </style>
 </head>
 
@@ -109,7 +110,7 @@
 
 <body id='container'>
 
-    <div id="box"></div>
+    <!-- <div id="box"></div> -->
 
     <!-- <button class="button" type="button" onclick="to_big()">to big</button>
     <button class="button" type="button" onclick="to_small()">to small</button>
@@ -137,7 +138,7 @@
 
     <!-- <iframe src="content.html" frameborder="1" id='my-iframe'></iframe> -->
 
-    <!-- <table class="table">
+    <table class="data-table">
         <thead>
             <tr>
                 <th>Name</th>
@@ -157,7 +158,9 @@
                 <td>freelance</td>
             </tr>
         </tbody>
-    </table> -->
+    </table>
+
+    <button id="btnExportToCsv" type="button" class="button">Export to CSV</button>
 
     <!-- <div id="box">
     <button id="my_btn">Click Me</button>
@@ -169,7 +172,7 @@
     <script src="js/chaneg_json_output.js"></script>
     <script src="js/chaining_fetch_request.js"></script>
     <script src="js/export_table_to_csv.js"></script>
-    <script src="js/detect_css_animation.js"></script>
+    <!-- <script src="js/detect_css_animation.js"></script> -->
     <!-- <script src="js/virtual_keyboard.js"></script> -->
     <!-- <script src="js/favicon_change_dynamically.js"></script> -->
     <!-- <script src="js/gettig_css_style_with_js.js"></script> -->

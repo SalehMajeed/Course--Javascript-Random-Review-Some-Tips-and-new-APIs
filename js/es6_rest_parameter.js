@@ -1,4 +1,4 @@
-function add(a, b, ...nums) {
+function add(...[a, b, ...nums]) {
   let total = 0;
 
   console.log(a, b);

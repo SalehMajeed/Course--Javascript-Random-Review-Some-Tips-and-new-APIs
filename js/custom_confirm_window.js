@@ -41,8 +41,8 @@ const Confirm = {
       ".confirm__button--cancel"
     );
 
-    confirm_el.addEventListener("click", function (e) {
-      if (e.target == confirm_el) {
+    confirm_el.addEventListener("click", (e) => {
+      if (e.target === confirm_el) {
         options.oncancel();
         this._close(confirm_el);
       }

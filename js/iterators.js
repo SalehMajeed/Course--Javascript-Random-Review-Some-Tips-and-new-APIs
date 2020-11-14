@@ -40,27 +40,27 @@
 //   console.log(n);
 // }
 
-class NumberList {
-  constructor() {
-    this.numbers = [1, 2, 3, 4];
-  }
-  [Symbol.iterator]() {
-    const numbers = this.numbers;
-    let current_index = -1;
+// class NumberList {
+//   constructor() {
+//     this.numbers = [1, 2, 3, 4];
+//   }
+//   [Symbol.iterator]() {
+//     const numbers = this.numbers;
+//     let current_index = -1;
 
-    return {
-      next() {
-        return {
-          value: numbers[++current_index],
-          done: current_index >= numbers.length,
-        };
-      },
-    };
-  }
-}
+//     return {
+//       next() {
+//         return {
+//           value: numbers[++current_index],
+//           done: current_index >= numbers.length,
+//         };
+//       },
+//     };
+//   }
+// }
 
-const num_list = new NumberList();
+// const num_list = new NumberList();
 
-for (const n of num_list) {
-  console.log(n);
-}
+// for (const n of num_list) {
+//   console.log(n);
+// }

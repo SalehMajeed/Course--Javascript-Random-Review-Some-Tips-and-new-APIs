@@ -1,5 +1,3 @@
-const { time } = require("console");
-
 class Settings {
   constructor() {
     if (Settings.instance instanceof Settings) return Settings.instance;

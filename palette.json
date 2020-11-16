@@ -1,0 +1,34 @@
+[
+    {
+        "desc": "dcode Primary",
+        "color": "#009578"
+    },
+    {
+        "desc": "dcode Primary Light",
+        "color": "#6dcdb1"
+    },
+    {
+        "desc": "dcode Secondary",
+        "color": "#252c6a"
+    },
+    {
+        "desc": "dcode Secondary light",
+        "color": "#7f89df"
+    },
+    {
+        "desc": "dcode tertiary",
+        "color": "#009578"
+    },
+    {
+        "desc": "dcode tertiary light",
+        "color": "#ffddc7"
+    },
+    {
+        "desc": "dcode Red",
+        "color": "#fa364a"
+    },
+    {
+        "desc": "dcode red light",
+        "color": "#ffb8c0"
+    }
+]

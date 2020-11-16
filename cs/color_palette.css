@@ -1,0 +1,38 @@
+body {
+  margin: 15px;
+}
+
+.palette,
+.palette * {
+  box-sizing: border-box;
+}
+
+.palette {
+  font-family: sans-serif;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, ifr));
+}
+
+.palette_color {
+  height: 150px;
+  position: relative;
+}
+
+.palette__desc {
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+.palette__input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-top: none;
+}

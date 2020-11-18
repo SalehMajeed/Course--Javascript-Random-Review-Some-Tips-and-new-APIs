@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="cs/image_preview.css">
     <link rel="stylesheet" href="cs/color_palette.css">
     <link rel="stylesheet" href="cs/table_sort.css">
+    <link rel="stylesheet" href="cs/instant_bar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         /* #box {
             width: 200px;
@@ -130,6 +132,32 @@
 
 
 <body>
+    <div id="searchUsers" class="instant-search">
+        <div class="instant-search__input-container">
+            <input class="instant-search__input" type="text" spellcheck="false" placeholder="Search Users">
+            <i class="material-icons instant-search__icon">search</i>
+        </div>
+        <div class="instant-search__results-container">
+            <a href="#" class="instant-search__result">
+                <div class="instant-search__title">
+                    <p class="instant-search__paragraph">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus blanditiis atque explicabo culpa
+                        modi quis dolores ipsum eveniet. Aspernatur quas eligendi architecto suscipit repudiandae facere
+                        molestias, totam quidem placeat repellat?
+                    </p>
+                </div>
+            </a>
+            <a href="#" class="instant-search__result">
+                <div class="instant-search__title">
+                    <p class="instant-search__paragraph">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus blanditiis atque explicabo culpa
+                        modi quis dolores ipsum eveniet. Aspernatur quas eligendi architecto suscipit repudiandae facere
+                        molestias, totam quidem placeat repellat?
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
     <h1>hello</h1>
     <!-- <table class="table table-sortable">
         <thead>
@@ -356,8 +384,8 @@
     <script src="js/async_await.js"></script>
     <script src="js/element_toggle_attribute.js"></script>
     <script src="js/switch_tabs.js"></script>
-    <script src="js/instant_bar.js"></script>
-    <script src="js/match_media.js"></script>
+    <script src="js/instant_bar.js" type="module"></script>
+    <!-- <script src="js/match_media.js"></script> -->
     <!-- <script src="js/dark_light_mode.js"></script> -->
     <!-- <script src="js/proxy_object.js"></script> -->
     <!-- <script src="js/full_screen.js"></script> -->

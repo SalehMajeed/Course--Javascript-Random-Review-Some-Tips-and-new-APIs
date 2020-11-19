@@ -46,10 +46,49 @@ class Instant_search {
         });
       }, 500);
     });
+
+    this.elements.input.addEventListener("focus", () => {
+      this.elements.result_container.classList.add(
+        "instant-search__results-container--visible"
+      );
+    });
+
+    this.elements.input.addEventListener("blur", () => {
+      this.elements.result_container.classList.remove(
+        "instant-search__results-container--visible"
+      );
+    });
   }
 
   populate_results(results) {
-    console.log(results);
+    // clear all existing results
+    while (this.elements.result_container.firstChild) {
+      this.elements.result_container.removeChild(
+        this.elements.result_container.firstChild
+      );
+    }
+
+    for (const result of results) {
+      this.elements.result_container.appendChild(
+        this.create_result_element(results)
+      );
+    }
+  }
+
+  create_result_element(result) {
+    const anchor_element = document.createElement("a");
+
+    anchor_element.classList.add("instant-search__result");
+    anchor_element.insertAdjacentElement(
+      "afterbegin",
+      this.options.templateFunction(result)
+    );
+
+    if ("href" in result) {
+      anchor_element.setAttribute("href", result.href);
+    }
+
+    return anchor_element;
   }
 
   perform_search(query) {
@@ -62,8 +101,25 @@ class Instant_search {
     return fetch(url, {
       method: "get",
     })
-      .then((response) => response.json())
-      .then((response_data) => console.log(response_data));
+      .then((response) => {
+        if (response.status !== 200) {
+          throw new Error("Something went wrong with the search");
+        }
+
+        return response.json();
+      })
+      .then((response_data) => {
+        console.log(response_data);
+        return this.options.responseParser(response_data);
+      })
+      .catch((error) => {
+        console.error(error);
+        return [];
+      })
+      .finally((results) => {
+        this.set_loading(false);
+        return results;
+      });
   }
 
   set_loading(b) {

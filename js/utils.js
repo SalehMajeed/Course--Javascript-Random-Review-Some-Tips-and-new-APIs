@@ -14,6 +14,10 @@
 
 // export { double, name };
 
-export default function say_name() {
-  console.log("Anony");
+// export function say_name() {
+//   console.log("Anony");
+// }
+
+export default function multiply(number, multipler) {
+  return number * multipler;
 }

@@ -1,0 +1,29 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "express": "^4.17.1",
+    "papaparse": "^5.3.0",
+    "shuffle-array": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalehMajeed/Javascript-Random-Review-Some-Tips-and-new-APIs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SalehMajeed/Javascript-Random-Review-Some-Tips-and-new-APIs/issues"
+  },
+  "homepage": "https://github.com/SalehMajeed/Javascript-Random-Review-Some-Tips-and-new-APIs#readme"
+}

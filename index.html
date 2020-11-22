@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="cs/table_sort.css">
     <link rel="stylesheet" href="cs/instant_bar.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="cs/csv_viewr.css">
     <style>
         #box {
             width: 200px;
@@ -139,6 +140,11 @@
 
 
 <body>
+
+    <input type="file" id="csv_file_input" style="padding-bottom: 15px;">
+
+    <table id="csv-root"></table>
+
     <!-- <div id="searchUsers" class="instant-search">
         <div class="instant-search__input-container">
             <input class="instant-search__input" type="text" spellcheck="false" placeholder="Search Users">
@@ -167,7 +173,7 @@
         </div>
     </div> -->
 
-    <h1>hello</h1>
+    <!-- <h1>hello</h1> -->
 
     <!-- <input type="text" id='my-text-input'> -->
 
@@ -380,7 +386,7 @@
     <!-- <div class="test"></div>
     <div class="test"></div> -->
 
-    <div id="container">
+    <!-- <div id="container">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis omnis quis id sunt dolores
             magnam
@@ -419,7 +425,7 @@
             reprehenderit!
         </p>
 
-    </div>
+    </div> -->
 
     <!-- <canvas id="my-canvas" width="300" height="128"></canvas>
     <button class="button" id="btn-upload">
@@ -428,8 +434,9 @@
 
 
 
-    <script src="js/element_from_point.js"></script>
-    <script src="js/csc_viewer.js"></script>
+    <!-- <script src="js/element_from_point.js"></script> -->
+    <script src="node_modules/papaparse/papaparse.min.js"></script>
+    <script src="js/csc_viewer.js" type="module"></script>
     <!-- <script src="js/scrolling_animation.js"></script> -->
     <!-- <script src="js/dynamic_import.js" type="module"></script> -->
     <!-- <script src="js/is_equal_node.js"></script> -->

@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="cs/color_palette.css">
     <link rel="stylesheet" href="cs/table_sort.css">
     <link rel="stylesheet" href="cs/instant_bar.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="cs/csv_viewr.css">
+    <link rel="stylesheet" href="cs/collapsible.css">
     <style>
         #box {
             width: 200px;
@@ -141,9 +141,37 @@
 
 <body>
 
-    <input type="file" id="csv_file_input" style="padding-bottom: 15px;">
+    <div class="page-container">
+        <nav class="nav">
+            <div class="nav__border"></div>
+            <a href="#" class="nav__link">
+                <div class="nav__icon-container">
+                    <i class="material-icons">dashboard</i>
+                </div>
+                <span class="nav__label">Dashboard</span>
+            </a><a href="#" class="nav__link">
+                <div class="nav__icon-container">
+                    <i class="material-icons">alarm</i>
+                </div>
+                <span class="nav__label">Alerts</span>
+            </a><a href="#" class="nav__link">
+                <div class="nav__icon-container">
+                    <i class="material-icons">extension</i>
+                </div>
+                <span class="nav__label">Plugins</span>
+            </a><a href="#" class="nav__link">
+                <div class="nav__icon-container">
+                    <i class="material-icons">power_settings_new</i>
+                </div>
+                <span class="nav__label">Log Out</span>
+            </a>
+        </nav>
+        <main class="main"></main>
+    </div>
 
-    <table id="csv-root"></table>
+    <!-- <input type="file" id="csv_file_input" style="padding-bottom: 15px;">
+
+    <table id="csv-root"></table> -->
 
     <!-- <div id="searchUsers" class="instant-search">
         <div class="instant-search__input-container">
@@ -433,10 +461,13 @@
     </button> -->
 
 
-
+    <script src="js/data_table_asyn.js"></script>
+    <script src="js/nullish.js"></script>
+    <script src="js/rewrite_js.js"></script>
+    <script src="js/callapsile_navigator.js"></script>
     <!-- <script src="js/element_from_point.js"></script> -->
-    <script src="node_modules/papaparse/papaparse.min.js"></script>
-    <script src="js/csc_viewer.js" type="module"></script>
+    <!-- <script src="node_modules/papaparse/papaparse.min.js"></script> -->
+    <!-- <script src="js/csc_viewer.js" type="module"></script> -->
     <!-- <script src="js/scrolling_animation.js"></script> -->
     <!-- <script src="js/dynamic_import.js" type="module"></script> -->
     <!-- <script src="js/is_equal_node.js"></script> -->
